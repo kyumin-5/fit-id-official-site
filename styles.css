@@ -40,3 +40,12 @@
 .email-draft-btn{display:inline-flex;align-items:center;justify-content:space-between;gap:18px;background:#e3f8e9;border:1px solid #84d2a5;color:#144b2d;border-radius:9px;padding:11px 15px;font-weight:800;margin-top:13px;min-height:44px}
 .email-draft-btn:hover{background:#cff3dc}
 @media(max-width:600px){.contact-channels{margin-top:22px}.contact-channel{padding:14px 40px 14px 15px}.contact-channel strong{font-size:16px}.email-draft-btn{width:100%}}
+
+/* KakaoTalk official channel: visible access on desktop and mobile */
+.kakao-channel{background:rgba(254,229,0,.09);border-color:rgba(254,229,0,.35)}
+.kakao-channel:hover{background:rgba(254,229,0,.14);border-color:rgba(254,229,0,.6)}
+.kakao-channel .channel-label{color:#f3dd77}
+.kakao-floating{position:fixed;right:max(20px,env(safe-area-inset-right));bottom:max(22px,env(safe-area-inset-bottom));z-index:89;display:inline-flex;align-items:center;gap:10px;background:#fee500;color:#221f17;border-radius:999px;padding:9px 18px 9px 9px;box-shadow:0 12px 32px rgba(0,0,0,.22);font-size:13px;font-weight:800;transition:transform .2s,box-shadow .2s}
+.kakao-floating:hover{transform:translateY(-3px);box-shadow:0 15px 38px rgba(0,0,0,.3)}
+.kakao-float-icon{display:grid;place-items:center;width:37px;height:37px;border-radius:50%;background:#302a1f;color:#fee500;font-size:8px;font-weight:800;letter-spacing:-.03em}
+@media(max-width:650px){.kakao-floating{right:max(14px,env(safe-area-inset-right));bottom:max(17px,env(safe-area-inset-bottom));padding:7px;border-radius:50%}.kakao-float-icon{width:43px;height:43px}.kakao-float-label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}}
