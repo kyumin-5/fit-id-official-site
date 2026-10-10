@@ -96,6 +96,8 @@ inquiryForm.addEventListener('submit', async (event) => {
     return;
   }
   inquiryText.value = buildInquiry(fields);
+  const emailDraftLink = document.getElementById('email-draft-btn');
+  emailDraftLink.href = 'mailto:ben-12@naver.com?subject=' + encodeURIComponent('[FIT ID] 초기 PoC 제휴 문의 - ' + fields.shop.trim()) + '&body=' + encodeURIComponent(inquiryText.value);
   inquiryOutput.hidden = false;
   const copied = await copyText(inquiryText.value);
   copyStatus.textContent = copied ? '문의 문안을 복사했습니다. 원하는 공식 연락 채널에 붙여넣어 전달해 주세요.' : '문안 복사를 지원하지 않는 브라우저입니다. 위 내용을 직접 선택해 복사해 주세요.';
