@@ -33,11 +33,12 @@
       <nav class="desktop-nav" aria-label="주 메뉴">
         <a href="#why">FIT ID 소개</a>
         <a href="#how">작동 방식</a>
+        <a href="#virtual-try-on">가상피팅</a>
         <a href="#for-partners">파트너</a>
         <a href="#faq">FAQ</a>
       </nav>
       <div class="nav-actions">
-        <a class="nav-ghost" href="https://fit-id-partner2.vercel.app/" target="_blank" rel="noopener noreferrer">파트너 로그인 <span aria-hidden="true">↗</span></a>
+        <a class="nav-ghost" href="https://fit-id-partner2.vercel.app/" target="_blank" rel="noopener noreferrer">파트너 웹 <span aria-hidden="true">↗</span></a>
         <a class="nav-cta" href="https://fit-id-consumer-mtvz.vercel.app/" target="_blank" rel="noopener noreferrer">FIT ID 체험하기 <span aria-hidden="true">↗</span></a>
         <button class="menu-toggle" id="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="mobile-nav" aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
@@ -45,6 +46,7 @@
     <nav class="mobile-nav" id="mobile-nav" aria-label="모바일 메뉴" hidden>
       <a href="#why">FIT ID 소개</a>
       <a href="#how">작동 방식</a>
+      <a href="#virtual-try-on">가상피팅</a>
       <a href="#for-partners">파트너</a>
       <a href="#faq">자주 묻는 질문</a>
       <a class="mobile-primary" href="https://fit-id-consumer-mtvz.vercel.app/" target="_blank" rel="noopener noreferrer">서비스 체험하기 ↗</a>
@@ -127,11 +129,57 @@
 
     <section class="section distinction-section" id="experience"><div class="container distinction-grid"><div class="distinction-copy reveal"><span class="section-kicker">03 / THE FIT ID DIFFERENCE</span><h2>쇼핑몰은 달라도,<br />나의 <span class="fit-underline">핏 기준은 하나.</span></h2><p>새로운 쇼핑몰에서 또다시 사이즈를 추측하지 않도록. FIT ID는 여러 쇼핑몰에서 재사용할 수 있는 개인별 핏 기준을 지향합니다.</p><ul class="check-list"><li><span class="list-check">↗</span> 실제 잘 맞는 옷에서 출발하는 기준</li><li><span class="list-check">↗</span> 상품 실측과 비교하는 FIT CHECK</li><li><span class="list-check">↗</span> 쇼핑몰을 넘어 이어지는 하나의 FIT ID</li></ul><a class="inline-link" href="https://fit-id-consumer-mtvz.vercel.app/" target="_blank" rel="noopener noreferrer">소비자 서비스 살펴보기 <span aria-hidden="true">↗</span></a></div><div class="ecosystem reveal" aria-label="여러 쇼핑몰과 개인 FIT ID 연결 구조"><div class="ecosystem-label">ONE FIT ID · MULTIPLE STORES</div><div class="store-node node-left"><span>SHOP</span><strong>A</strong><small>SIZE DATA</small></div><div class="store-node node-right"><span>SHOP</span><strong>B</strong><small>SIZE DATA</small></div><div class="store-node node-bottom"><span>SHOP</span><strong>C</strong><small>SIZE DATA</small></div><div class="eco-link horizontal-left"></div><div class="eco-link horizontal-right"></div><div class="eco-link vertical-bottom"></div><div class="eco-core"><div class="eco-core-inner"><span>MY</span><strong>FIT ID</strong><i></i><small>PERSONAL FIT STANDARD</small></div></div><div class="eco-footnote">CONCEPT DIAGRAM / NOT A LIVE INTEGRATION COUNT</div></div></div></section>
 
+
+    <!-- Virtual try-on uses the existing authenticated Consumer MVP; this is an illustrative feature explanation, not a working in-page inference tool. -->
+    <section class="virtual-section" id="virtual-try-on" aria-labelledby="virtual-heading">
+      <div class="container virtual-grid">
+        <div class="virtual-copy reveal">
+          <span class="section-kicker">VIRTUAL TRY-ON / MVP</span>
+          <span class="virtual-chip"><span class="status-dot"></span> 체험 기능 · 개발/검증 중</span>
+          <h2 id="virtual-heading">사진으로 먼저 입어보는<br /><span>나의 다음 옷.</span></h2>
+          <p>FIT CHECK로 상품 사이즈를 비교하고, 가상피팅으로 옷을 입은 모습을 이미지로 미리 확인해 보세요. <strong>두 경험은 서로 다릅니다.</strong></p>
+          <div class="virtual-steps">
+            <div><span>01</span><p>나의 정면 전신 사진 준비</p></div>
+            <div><span>02</span><p>상품 사진과 실측 정보 선택</p></div>
+            <div><span>03</span><p>가상피팅 이미지 생성 및 확인</p></div>
+          </div>
+          <a class="btn btn-mint virtual-cta" href="https://fit-id-consumer-mtvz.vercel.app/?entry=virtual-try-on" target="_blank" rel="noopener noreferrer">가상피팅 체험하기 <span class="btn-arrow" aria-hidden="true">↗</span></a>
+          <p class="virtual-disclaimer">가상피팅은 이미지 기반 시뮬레이션입니다. 실제 의류 착용감·사이즈·체형 표현의 정확성을 보장하지 않습니다. 개인 사진과 상품 데이터가 필요하며 로그인 후 체험할 수 있습니다.</p>
+        </div>
+        <div class="virtual-visual reveal" aria-label="정면 사진과 상품 사진을 입력하여 가상피팅 이미지를 만드는 과정의 예시 도식">
+          <div class="virtual-visual-top"><span>FIT ID / VIRTUAL TRY-ON</span><span>PROCESS PREVIEW</span></div>
+          <div class="virtual-stages">
+            <div class="virtual-stage">
+              <div class="virtual-stage-art person-art" aria-hidden="true">
+                <svg viewBox="0 0 130 160" fill="none" focusable="false"><circle cx="65" cy="25" r="16" fill="#E4ECDF" stroke="#8CAF93" stroke-width="2"/><path d="M51 47 32 56 23 103l18 4 12-31v39l-7 35h16l8-37 8 37h16l-10-35V76l12 31 18-4-9-47-19-9" fill="#E8EEE7" stroke="#89A991" stroke-width="2" stroke-linejoin="round"/></svg>
+              </div>
+              <strong>MY PHOTO</strong><small>정면 사진</small>
+            </div>
+            <span class="virtual-math" aria-hidden="true">+</span>
+            <div class="virtual-stage">
+              <div class="virtual-stage-art garment-art" aria-hidden="true">
+                <svg viewBox="0 0 130 160" fill="none" focusable="false"><path d="M49 26 28 36 12 72 35 84l13-18v68h66V66l13 18 23-12-16-36-21-10-13 11H61L49 26Z" transform="translate(-16 0)" fill="#B4F5CD" stroke="#267C4A" stroke-width="2.5" stroke-linejoin="round"/><path d="M54 28q11 27 26 0" stroke="#267C4A" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+              <strong>PRODUCT</strong><small>의류 사진</small>
+            </div>
+            <span class="virtual-math" aria-hidden="true">→</span>
+            <div class="virtual-stage virtual-stage-result">
+              <div class="virtual-stage-art fitted-art" aria-hidden="true">
+                <svg viewBox="0 0 130 160" fill="none" focusable="false"><circle cx="65" cy="25" r="16" fill="#E4ECDF" stroke="#8CAF93" stroke-width="2"/><path d="M52 47 32 55 23 100l17 6 13-30v39l-8 36h17l8-36 8 36h17l-11-36V76l13 30 17-6-9-45-19-8-13 11H64L52 47Z" fill="#B4F5CD" stroke="#267C4A" stroke-width="2.5" stroke-linejoin="round"/></svg>
+              </div>
+              <strong>PREVIEW</strong><small>가상피팅 예시</small>
+            </div>
+          </div>
+          <div class="virtual-visual-footer"><span class="virtual-preview-tag">EXAMPLE FLOW</span><span>실제 결과 이미지가 아닌 설명용 그래픽</span></div>
+        </div>
+      </div>
+    </section>
+
     <section class="partner-section" id="for-partners" aria-labelledby="partner-heading"><div class="container partner-grid"><div class="partner-copy reveal"><span class="section-kicker">04 / FOR BRANDS & COMMERCE</span><span class="partner-chip"><span class="status-dot"></span> EARLY PoC PARTNERS</span><h2 id="partner-heading">상품을 더 잘 이해하는<br /><span>쇼핑 경험을 함께.</span></h2><p>쇼핑몰이 관리하는 상품 실측과 고객의 FIT ID를 연결합니다. 사이즈 선택의 불확실성을 줄이는 경험을 함께 검증할 초기 파트너를 찾고 있습니다.</p><ul class="partner-points"><li><span>01</span> 상품별 사이즈·실측 정보 등록</li><li><span>02</span> FIT CHECK를 통한 고객의 핏 비교 경험</li><li><span>03</span> PoC 기반 도입 방식과 운영 개선 검증</li></ul><div class="partner-actions"><a class="btn btn-mint" href="https://fit-id-partner2.vercel.app/" target="_blank" rel="noopener noreferrer">파트너 웹 둘러보기 <span class="btn-arrow">↗</span></a><a class="partner-secondary" href="#contact">PoC 제휴 알아보기 ↘</a><a class="partner-secondary" href="https://fit-id-demo-malls.vercel.app/" target="_blank" rel="noopener noreferrer">쇼핑몰 연동 데모 ↗</a></div></div><div class="partner-dashboard reveal" aria-label="파트너 대시보드 콘셉트 UI 미리보기"><div class="dashboard-top"><div class="dashboard-brand"><span class="dashboard-brand-mark">F.</span> FIT ID <small>/ PARTNER</small></div><div class="dashboard-dots"><i></i><i></i><i></i></div></div><div class="dashboard-content"><div class="dashboard-rail"><div class="rail-square active-rail"></div><div class="rail-square"></div><div class="rail-square"></div><div class="rail-square"></div></div><div class="dashboard-main"><div class="dashboard-overline">OVERVIEW <span>콘셉트 화면</span></div><h3>Your product.<br />Their perfect fit.</h3><div class="dashboard-stat-row"><div class="stat-pane"><span>PRODUCT CATALOG</span><strong>Product data</strong><small>상품 실측 연결</small></div><div class="stat-pane"><span>SIZE MAPPING</span><strong>Fit comparison</strong><small>고객별 비교 경험</small></div></div><div class="dashboard-table"><div class="table-head"><span>PRODUCT</span><span>SIZE</span><span>STATUS</span></div><div class="table-row"><span><i class="table-icon beige"></i> DAILY SHIRT</span><span>S / M / L</span><span class="table-active">READY</span></div><div class="table-row"><span><i class="table-icon mint"></i> COTTON TEE</span><span>S / M / L</span><span class="table-active">READY</span></div><div class="table-row"><span><i class="table-icon blue"></i> STRAIGHT DENIM</span><span>26–32</span><span class="table-pending">SAMPLE</span></div></div><div class="dashboard-smallprint">설명용 예시 화면이며 실제 판매 데이터가 아닙니다.</div></div></div></div></div></section>
 
     <section class="section audience-section" id="start"><div class="container"><div class="audience-head reveal"><span class="section-kicker">05 / GET STARTED</span><h2>당신에게 맞는 FIT ID를<br />지금 만나보세요.</h2></div><div class="audience-cards"><a class="audience-card consumer-card reveal" href="https://fit-id-consumer-mtvz.vercel.app/" target="_blank" rel="noopener noreferrer"><div><span class="audience-overline">FOR SHOPPERS</span><h3>내게 맞는 핏을<br />찾고 싶다면</h3><p>나의 핏 데이터를 만들고, FIT CHECK를 경험해 보세요.</p></div><div class="audience-bottom"><span>소비자 서비스 체험</span><span class="circle-arrow">↗</span></div><div class="audience-card-graphic consumer-graphic" aria-hidden="true"><span>MY FIT</span><strong>F.</strong></div></a><a class="audience-card partner-card reveal" href="https://fit-id-partner2.vercel.app/" target="_blank" rel="noopener noreferrer"><div><span class="audience-overline">FOR PARTNERS</span><h3>우리 쇼핑몰에<br />FIT CHECK를</h3><p>상품 데이터 연결과 초기 PoC 참여 가능성을 살펴보세요.</p></div><div class="audience-bottom"><span>파트너 웹 접속</span><span class="circle-arrow">↗</span></div><div class="audience-card-graphic partner-graphic" aria-hidden="true"><span>CONNECT</span><strong>↗</strong></div></a></div></div></section>
 
-    <section class="section faq-section" id="faq"><div class="container faq-grid"><div class="faq-intro reveal"><span class="section-kicker">06 / QUESTIONS</span><h2>자주 묻는 질문</h2><p>FIT ID에 대해 궁금한 내용을 정리했습니다.</p></div><div class="faq-items reveal"><details><summary>FIT ID는 단순한 사이즈 추천 서비스인가요? <span class="faq-icon" aria-hidden="true">+</span></summary><div>단순히 키·몸무게만으로 사이즈를 고르는 방식과 다릅니다. 신체 정보, 실제 잘 맞았던 의류의 실측, 착용 경험을 함께 반영하는 개인별 핏 기준을 지향합니다.</div></details><details><summary>FIT CHECK는 어떤 정보를 비교하나요? <span class="faq-icon" aria-hidden="true">+</span></summary><div>사용자의 핏 기준과 판매자가 등록한 상품의 사이즈·실측 데이터를 비교합니다. 구체적인 제공 항목과 결과 화면은 현재 MVP 및 검증 단계에 따라 달라질 수 있습니다.</div></details><details><summary>FIT ID는 다른 쇼핑몰에서도 사용할 수 있나요? <span class="faq-icon" aria-hidden="true">+</span></summary><div>여러 제휴 쇼핑몰에서 하나의 FIT ID를 재사용하도록 하는 것이 서비스의 장기적인 방향입니다. 현재는 이를 검증하기 위한 MVP와 연동 구조를 개발하고 있습니다.</div></details><details><summary>쇼핑몰 운영자는 어떻게 시작할 수 있나요? <span class="faq-icon" aria-hidden="true">+</span></summary><div>파트너 웹에서 상품 등록 및 실측 관리 구조를 살펴볼 수 있습니다. 초기 PoC 제휴는 도입 범위와 실측 데이터 준비 상태를 개별 협의하는 방식으로 진행하고자 합니다.</div></details><details><summary>FIT ID는 현재 정식 출시된 서비스인가요? <span class="faq-icon" aria-hidden="true">+</span></summary><div>현재는 MVP를 개발하고 초기 PoC를 준비하는 단계입니다. 사이트의 일부 화면은 구조 이해를 위한 콘셉트 예시이며, 정식 서비스 제공 범위나 성과를 의미하지 않습니다.</div></details></div></div></section>
+    <section class="section faq-section" id="faq"><div class="container faq-grid"><div class="faq-intro reveal"><span class="section-kicker">06 / QUESTIONS</span><h2>자주 묻는 질문</h2><p>FIT ID에 대해 궁금한 내용을 정리했습니다.</p></div><div class="faq-items reveal"><details><summary>FIT ID는 단순한 사이즈 추천 서비스인가요? <span class="faq-icon" aria-hidden="true">+</span></summary><div>단순히 키·몸무게만으로 사이즈를 고르는 방식과 다릅니다. 신체 정보, 실제 잘 맞았던 의류의 실측, 착용 경험을 함께 반영하는 개인별 핏 기준을 지향합니다.</div></details><details><summary>FIT CHECK는 어떤 정보를 비교하나요? <span class="faq-icon" aria-hidden="true">+</span></summary><div>사용자의 핏 기준과 판매자가 등록한 상품의 사이즈·실측 데이터를 비교합니다. 구체적인 제공 항목과 결과 화면은 현재 MVP 및 검증 단계에 따라 달라질 수 있습니다.</div></details><details><summary>FIT ID는 다른 쇼핑몰에서도 사용할 수 있나요? <span class="faq-icon" aria-hidden="true">+</span></summary><div>여러 제휴 쇼핑몰에서 하나의 FIT ID를 재사용하도록 하는 것이 서비스의 장기적인 방향입니다. 현재는 이를 검증하기 위한 MVP와 연동 구조를 개발하고 있습니다.</div></details><details><summary>가상피팅으로 정확한 사이즈까지 알 수 있나요? <span class="faq-icon" aria-hidden="true">+</span></summary><div>가상피팅은 내 사진에 상품을 시각적으로 시뮬레이션하는 기능으로, FIT CHECK의 실측 비교·사이즈 추천과 다릅니다. 가상 이미지가 실제 착용 결과나 추천 사이즈를 보장하지는 않습니다. 현재 MVP에서 제한적으로 체험할 수 있습니다.</div></details><details><summary>쇼핑몰 운영자는 어떻게 시작할 수 있나요? <span class="faq-icon" aria-hidden="true">+</span></summary><div>파트너 웹에서 상품 등록 및 실측 관리 구조를 살펴볼 수 있습니다. 초기 PoC 제휴는 도입 범위와 실측 데이터 준비 상태를 개별 협의하는 방식으로 진행하고자 합니다.</div></details><details><summary>FIT ID는 현재 정식 출시된 서비스인가요? <span class="faq-icon" aria-hidden="true">+</span></summary><div>현재는 MVP를 개발하고 초기 PoC를 준비하는 단계입니다. 사이트의 일부 화면은 구조 이해를 위한 콘셉트 예시이며, 정식 서비스 제공 범위나 성과를 의미하지 않습니다.</div></details></div></div></section>
 
     <section class="contact-section" id="contact"><div class="container contact-grid"><div class="contact-copy reveal"><span class="section-kicker">LET'S BUILD A BETTER FIT EXPERIENCE</span><h2>더 나은 쇼핑의 기준,<br /><span>함께 만들어 갑니다.</span></h2><p>FIT ID의 초기 쇼핑몰 파트너십 및 PoC 협업을 검토하고 있다면, 간단한 제휴 제안서를 만들어 보세요.</p><div class="contact-footnote"><span class="status-dot"></span> PoC 단계 · 제휴 협의 대상 모집</div>
         <div class="contact-channels" aria-label="FIT ID 공식 문의 연락처">
@@ -142,6 +190,6 @@
   </main>
 
   <a class="kakao-floating" href="https://pf.kakao.com/_LXiFX" target="_blank" rel="noopener noreferrer" aria-label="FIT ID 카카오톡 채널에서 문의하기"><span class="kakao-float-icon" aria-hidden="true">TALK</span><span class="kakao-float-label">카카오톡 문의</span></a>
-  <footer class="footer"><div class="container"><div class="footer-top"><div class="footer-brand-block"><a class="brand" href="#top" aria-label="FIT ID 처음으로"><span class="brand-mark"><span>F<span class="brand-dot">.</span></span></span><span class="brand-type">FIT ID<span class="brand-type-dot">.</span></span></a><p>Better fit. Better decisions.<br />옷은 달라도, 나의 핏 기준은 하나.</p></div><div class="footer-nav"><div><strong>EXPLORE</strong><a href="#why">서비스 소개</a><a href="#how">작동 방식</a><a href="#faq">자주 묻는 질문</a></div><div><strong>PRODUCT</strong><a href="https://fit-id-consumer-mtvz.vercel.app/" target="_blank" rel="noopener noreferrer">Consumer ↗</a><a href="https://fit-id-partner2.vercel.app/" target="_blank" rel="noopener noreferrer">Partner ↗</a><a href="https://fit-id-demo-malls.vercel.app/" target="_blank" rel="noopener noreferrer">쇼핑몰 연동 데모 ↗</a><a href="#contact">PoC 제휴 문의</a></div><div><strong>CONTACT</strong><a href="https://pf.kakao.com/_LXiFX" target="_blank" rel="noopener noreferrer">카카오톡 채널 ↗</a><a href="mailto:ben-12@naver.com">ben-12@naver.com ↗</a><a href="tel:+821023149022">010-2314-9022 ↗</a></div></div></div><div class="footer-bottom"><span>© <span id="copyright-year">2026</span> FIT ID. All rights reserved.</span><span>FIT ID · PERSONAL FIT IDENTITY PLATFORM</span><a href="#top">BACK TO TOP ↑</a></div><p class="footer-legal">본 사이트는 FIT ID의 공식 서비스 소개 및 MVP/PoC 안내를 위한 홈페이지입니다. 예시 UI는 실제 이용 결과나 사업 성과를 의미하지 않습니다.</p></div></footer>
+  <footer class="footer"><div class="container"><div class="footer-top"><div class="footer-brand-block"><a class="brand" href="#top" aria-label="FIT ID 처음으로"><span class="brand-mark"><span>F<span class="brand-dot">.</span></span></span><span class="brand-type">FIT ID<span class="brand-type-dot">.</span></span></a><p>Better fit. Better decisions.<br />옷은 달라도, 나의 핏 기준은 하나.</p></div><div class="footer-nav"><div><strong>EXPLORE</strong><a href="#why">서비스 소개</a><a href="#how">작동 방식</a><a href="#virtual-try-on">가상피팅</a><a href="#faq">자주 묻는 질문</a></div><div><strong>PRODUCT</strong><a href="https://fit-id-consumer-mtvz.vercel.app/" target="_blank" rel="noopener noreferrer">Consumer ↗</a><a href="https://fit-id-partner2.vercel.app/" target="_blank" rel="noopener noreferrer">Partner ↗</a><a href="https://fit-id-demo-malls.vercel.app/" target="_blank" rel="noopener noreferrer">쇼핑몰 연동 데모 ↗</a><a href="#contact">PoC 제휴 문의</a></div><div><strong>CONTACT</strong><a href="https://pf.kakao.com/_LXiFX" target="_blank" rel="noopener noreferrer">카카오톡 채널 ↗</a><a href="mailto:ben-12@naver.com">ben-12@naver.com ↗</a><a href="tel:+821023149022">010-2314-9022 ↗</a></div></div></div><div class="footer-bottom"><span>© <span id="copyright-year">2026</span> FIT ID. All rights reserved.</span><span>FIT ID · PERSONAL FIT IDENTITY PLATFORM</span><a href="#top">BACK TO TOP ↑</a></div><p class="footer-legal">본 사이트는 FIT ID의 공식 서비스 소개 및 MVP/PoC 안내를 위한 홈페이지입니다. 예시 UI는 실제 이용 결과나 사업 성과를 의미하지 않습니다.</p></div></footer>
 </body>
 </html>
