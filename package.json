@@ -1,0 +1,10 @@
+{
+  "name": "fit-id-official-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FIT ID official public company landing page",
+  "scripts": {
+    "dev": "npx serve . -l 3000",
+    "check": "node --check app.js"
+  }
+}
