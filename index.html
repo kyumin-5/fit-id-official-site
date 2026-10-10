@@ -131,46 +131,52 @@
 
 
     <!-- Virtual try-on uses the existing authenticated Consumer MVP; this is an illustrative feature explanation, not a working in-page inference tool. -->
-    <section class="virtual-section" id="virtual-try-on" aria-labelledby="virtual-heading">
-      <div class="container virtual-grid">
+    <section class="virtual-tryon-section" id="virtual-try-on" aria-labelledby="virtual-heading">
+      <div class="container virtual-tryon-grid">
         <div class="virtual-copy reveal">
-          <span class="section-kicker">VIRTUAL TRY-ON / MVP</span>
+          <span class="section-kicker">04 / VIRTUAL TRY-ON / MVP</span>
           <span class="virtual-chip"><span class="status-dot"></span> 체험 기능 · 개발/검증 중</span>
           <h2 id="virtual-heading">사진으로 먼저 입어보는<br /><span>나의 다음 옷.</span></h2>
-          <p>FIT CHECK로 상품 사이즈를 비교하고, 가상피팅으로 옷을 입은 모습을 이미지로 미리 확인해 보세요. <strong>두 경험은 서로 다릅니다.</strong></p>
-          <div class="virtual-steps">
-            <div><span>01</span><p>나의 정면 전신 사진 준비</p></div>
-            <div><span>02</span><p>상품 사진과 실측 정보 선택</p></div>
-            <div><span>03</span><p>가상피팅 이미지 생성 및 확인</p></div>
+          <p><strong>FIT CHECK</strong>로 상품 사이즈를 비교하고, 가상피팅으로 옷을 입은 모습을 이미지로 미리 확인해 보세요. <strong>두 경험은 서로 다릅니다.</strong></p>
+          <ul class="virtual-points">
+            <li><span>01</span> 나의 정면 전신 사진 준비</li>
+            <li><span>02</span> 상품 사진과 실측 정보 선택</li>
+            <li><span>03</span> 가상피팅 이미지 생성 및 확인</li>
+          </ul>
+          <div class="virtual-actions">
+            <a class="btn btn-mint" href="https://fit-id-consumer-mtvz.vercel.app/?entry=virtual-try-on" target="_blank" rel="noopener noreferrer">가상피팅 체험하기 <span class="btn-arrow">↗</span></a>
+            <a class="virtual-secondary" href="https://fit-id-consumer-mtvz.vercel.app/" target="_blank" rel="noopener noreferrer">Consumer 앱 보기 ↗</a>
           </div>
-          <a class="btn btn-mint virtual-cta" href="https://fit-id-consumer-mtvz.vercel.app/?entry=virtual-try-on" target="_blank" rel="noopener noreferrer">가상피팅 체험하기 <span class="btn-arrow" aria-hidden="true">↗</span></a>
-          <p class="virtual-disclaimer">가상피팅은 이미지 기반 시뮬레이션입니다. 실제 의류 착용감·사이즈·체형 표현의 정확성을 보장하지 않습니다. 개인 사진과 상품 데이터가 필요하며 로그인 후 체험할 수 있습니다.</p>
+          <p class="virtual-note">가상피팅은 이미지 기반 시뮬레이션입니다. 실제 의류 착용감·사이즈·체형 표현의 정확성을 보장하지 않습니다. 개인 사진과 상품 데이터가 필요하며 로그인 후 체험할 수 있습니다.</p>
         </div>
-        <div class="virtual-visual reveal" aria-label="정면 사진과 상품 사진을 입력하여 가상피팅 이미지를 만드는 과정의 예시 도식">
-          <div class="virtual-visual-top"><span>FIT ID / VIRTUAL TRY-ON</span><span>PROCESS PREVIEW</span></div>
-          <div class="virtual-stages">
-            <div class="virtual-stage">
-              <div class="virtual-stage-art person-art" aria-hidden="true">
-                <svg viewBox="0 0 130 160" fill="none" focusable="false"><circle cx="65" cy="25" r="16" fill="#E4ECDF" stroke="#8CAF93" stroke-width="2"/><path d="M51 47 32 56 23 103l18 4 12-31v39l-7 35h16l8-37 8 37h16l-10-35V76l12 31 18-4-9-47-19-9" fill="#E8EEE7" stroke="#89A991" stroke-width="2" stroke-linejoin="round"/></svg>
-              </div>
-              <strong>MY PHOTO</strong><small>정면 사진</small>
-            </div>
-            <span class="virtual-math" aria-hidden="true">+</span>
-            <div class="virtual-stage">
-              <div class="virtual-stage-art garment-art" aria-hidden="true">
-                <svg viewBox="0 0 130 160" fill="none" focusable="false"><path d="M49 26 28 36 12 72 35 84l13-18v68h66V66l13 18 23-12-16-36-21-10-13 11H61L49 26Z" transform="translate(-16 0)" fill="#B4F5CD" stroke="#267C4A" stroke-width="2.5" stroke-linejoin="round"/><path d="M54 28q11 27 26 0" stroke="#267C4A" stroke-width="2" stroke-linecap="round"/></svg>
-              </div>
-              <strong>PRODUCT</strong><small>의류 사진</small>
-            </div>
-            <span class="virtual-math" aria-hidden="true">→</span>
-            <div class="virtual-stage virtual-stage-result">
-              <div class="virtual-stage-art fitted-art" aria-hidden="true">
-                <svg viewBox="0 0 130 160" fill="none" focusable="false"><circle cx="65" cy="25" r="16" fill="#E4ECDF" stroke="#8CAF93" stroke-width="2"/><path d="M52 47 32 55 23 100l17 6 13-30v39l-8 36h17l8-36 8 36h17l-11-36V76l13 30 17-6-9-45-19-8-13 11H64L52 47Z" fill="#B4F5CD" stroke="#267C4A" stroke-width="2.5" stroke-linejoin="round"/></svg>
-              </div>
-              <strong>PREVIEW</strong><small>가상피팅 예시</small>
-            </div>
+        <div class="virtual-showcase reveal">
+          <div class="showcase-frame showcase-frame-primary">
+            <img loading="lazy" decoding="async" src="./assets/virtual-tryon-showcase.webp" alt="AI 가상피팅 소개 이미지. 내 사진 업로드, 상품 선택, 가상피팅 생성, 결과 미리보기 순서를 보여주는 FIT ID 워크플로우" />
           </div>
-          <div class="virtual-visual-footer"><span class="virtual-preview-tag">EXAMPLE FLOW</span><span>실제 결과 이미지가 아닌 설명용 그래픽</span></div>
+          <div class="showcase-caption">
+            <strong>AI 가상피팅 워크플로우 · 콘셉트 이미지</strong>
+            <span>사용자 사진 × 상품 이미지 → 가상 착장 결과 미리보기</span>
+          </div>
+          <div class="showcase-support-grid">
+            <article class="support-card">
+              <div class="support-image-frame">
+                <img loading="lazy" decoding="async" src="./assets/virtual-tryon-style-model.webp" alt="가상피팅 서비스 무드를 보여주는 패션 라이프스타일 이미지. 스마트폰으로 스타일을 확인하는 여성과 옷걸이 랙" />
+              </div>
+              <div class="support-copy">
+                <strong>STYLE PREVIEW</strong>
+                <span>내 사진과 옷 이미지를 바탕으로, 구매 전 스타일 무드를 더 직관적으로 확인합니다.</span>
+              </div>
+            </article>
+            <article class="support-card">
+              <div class="support-image-frame">
+                <img loading="lazy" decoding="async" src="./assets/virtual-tryon-style-products.webp" alt="가상피팅에 활용되는 상품 이미지를 연상시키는 깔끔한 의류 쇼룸 이미지" />
+              </div>
+              <div class="support-copy">
+                <strong>REAL PRODUCT VISUAL</strong>
+                <span>의류 이미지와 함께, 더 직관적인 가상 착장 경험을 소개합니다.</span>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
