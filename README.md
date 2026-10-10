@@ -45,3 +45,10 @@ node --check .\app.js
 - 전화: [010-2314-9022](tel:+821023149022)
 - 문의서 작성 후 브라우저의 이메일 앱으로 전달하는 버튼 제공 (서버 자동 접수 아님)
 - 카카오톡 공식 채널: https://pf.kakao.com/_LXiFX (문의 영역, 하단 푸터, 고정 상담 버튼)
+
+## AI 가상피팅 안내
+- 홈페이지 내 `#virtual-try-on` 섹션과 FAQ 추가
+- 체험 연결: https://fit-id-consumer-mtvz.vercel.app/?entry=virtual-try-on
+- 홈페이지 자체에서 사진 수집/추론 요청을 처리하지 않음
+- 기존 Consumer 앱의 인증·사진 업로드·VTON 기능 활용
+- 이미지 기반 시뮬레이션이므로 실제 의류 핏·사이즈 보장은 하지 않음
