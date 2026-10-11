@@ -1,0 +1,18 @@
+name: FIT ID Official Site CI
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  static-quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: JavaScript syntax check
+        run: node --check app.js
+      - name: Homepage smoke and safety checks
+        run: node --test scripts/site-smoke.test.cjs
