@@ -138,3 +138,12 @@
 @media(max-width:640px){.hero-editorial{width:70%;right:0;top:17px;height:85%;opacity:.23;border-radius:22px}.problem-story{grid-template-columns:1fr;min-height:unset}.problem-story-photo img{height:220px;min-height:unset}.problem-story-copy{padding:27px 24px 32px}.problem-story-copy strong{font-size:25px;margin:11px 0}.partner-editorial{height:195px;margin-top:20px}.partner-editorial figcaption{font-size:9px}}
 @media(prefers-reduced-motion:reduce){.hero-editorial img,.problem-story-photo img,.partner-editorial img{transition:none!important}}
 @media(min-width:921px){.hero-art>.phone-frame{transform:translateX(-55px) rotate(5deg)}.hero-editorial{opacity:.82}.hero-editorial:after{background:linear-gradient(90deg,rgba(4,23,13,.45),rgba(4,23,13,.05) 55%),linear-gradient(0deg,rgba(4,23,13,.4),transparent 45%)}}
+
+/* Phase 6: transparent early PoC invitation flow. */
+.poc-journey{margin:27px 0 24px;padding:21px 23px;border-radius:19px;background:rgba(162,251,193,.075);border:1px solid rgba(177,255,202,.18)}
+.poc-journey>strong{font:800 10px var(--font-display);letter-spacing:.14em;color:#b2f7c8}
+.poc-journey ol{list-style:none;padding:0;margin:15px 0;display:grid;gap:11px}
+.poc-journey li{display:flex;align-items:center;gap:13px;color:#e2eee3;font-size:13px;line-height:1.6;font-weight:600}
+.poc-journey li span{color:#a4f9c0;min-width:21px;font:800 11px var(--font-display)}
+.poc-journey p{margin:13px 0 0;color:#a2bbaa;font-size:11px;line-height:1.8}
+@media(max-width:600px){.poc-journey{margin:20px 0;padding:18px}.poc-journey li{font-size:12px}}
